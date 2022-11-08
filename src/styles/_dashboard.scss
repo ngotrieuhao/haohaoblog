@@ -1,0 +1,195 @@
+
+.main-panel {
+    transition: width .25s ease,margin .25s ease;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+}
+.content-wrapper {
+  background: #f2edf3;
+  // padding: 2.75rem;
+  padding-inline: 20px;
+  padding-top: 20px;  
+  width: 100%;
+  // flex-grow: 1;
+}
+.proBanner.hide {
+  display: none;
+}
+.proBanner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.proBanner .purchase-popup {
+  background: #000;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 3px;
+}
+.proBanner .purchase-popup p {
+  margin-bottom: auto;
+  margin-top: auto;
+  color: #b1b1b1;
+  font-weight: 400;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.grid-margin, .proBanner .purchase-popup {
+  margin-bottom: 2.5rem;
+}
+.align-items-center, .email-wrapper .message-body .attachments-sections ul li .details .buttons, .email-wrapper .message-body .attachments-sections ul li .thumb, .list-wrapper ul li, .loader-demo-box, .navbar .navbar-menu-wrapper .navbar-nav .nav-item .dropdown .dropdown-menu.navbar-dropdown .dropdown-item, .page-header {
+  align-items: center!important;
+}
+.fc .proBanner .purchase-popup button.purchase-button, .form-wizard .proBanner .purchase-popup .container>div:not(.content)>button.purchase-button, .proBanner .purchase-popup .btn.purchase-button, .proBanner .purchase-popup .fc button.purchase-button, .proBanner .purchase-popup .form-wizard .container>div:not(.content)>button.purchase-button, .proBanner .purchase-popup .swal2-modal .swal2-actions .purchase-button.swal2-styled, .proBanner .purchase-popup .swal2-modal .swal2-buttonswrapper .purchase-button.swal2-styled, .swal2-modal .swal2-actions .proBanner .purchase-popup .purchase-button.swal2-styled, .swal2-modal .swal2-buttonswrapper .proBanner .purchase-popup .purchase-button.swal2-styled {
+  background-color: #198ae3;
+  color: #fff;
+  border: none;
+  line-height: 1;
+  vertical-align: middle;
+}
+.proBanner .purchase-popup .bannerClose {
+  cursor: pointer;
+}
+
+.proBanner .purchase-popup i {
+  vertical-align: middle;
+  line-height: 1;
+  margin: auto 0;
+  color: #b1b1b1;
+}
+.form-wizard.form-wizard-vertical .container, .pills-vertical, .row {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+
+  .col-md-4 {
+    flex: 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+.stretch-card {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.grid-margin, .proBanner .purchase-popup {
+  margin-bottom: 2.5rem;
+}
+.card.card-img-holder {
+  position: relative;
+}
+
+.stretch-card>.card {
+  width: 100%;
+  min-width: 100%;
+  border-radius: 8px;
+}
+.card {
+  border: 0;
+}
+.bg-gradient-danger {
+  background: linear-gradient(90deg,#ffbf96,#fe7096);
+}
+.bg-gradient-info {
+  background: linear-gradient(90deg,#90caf9,#047edf 99%);
+}
+.bg-gradient-success, .dashboard-custom-date-picker .react-datepicker .react-datepicker__header {
+  background: linear-gradient(90deg,#84d9d2,#07cdae);
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.card.card-img-holder .card-img-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.mdi-24px.mdi-set, .mdi-24px.mdi:before {
+  font-size: 24px;
+}
+
+.mdi-chart-line:before {
+  content: "\F12A";
+}
+.mdi-set, .mdi:before {
+  display: inline-block;
+  font: normal normal normal 24px/1 Material Design Icons;
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.card-subtitle, .card-text:last-child {
+  margin-bottom: 0;
+}
+
+h2.mb-5 {
+  font-size: 2rem;
+}
+
+
+.page-title-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  box-shadow: 0 3px 8.3px 0.7px rgb(163 93 255 / 35%);
+  
+}
+.mdi-set, .mdi:before {
+  display: inline-block;
+  font: normal normal normal 24px/1 Material Design Icons;
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#theme-settings .settings-close, .bg-gradient-primary {
+  background: linear-gradient(90deg,#da8cff,#9a55ff);
+}
+
+/* Calendar */
+.react-calendar {
+  outline: none;
+  border:none !important;
+  margin-bottom: 2rem;
+  &__navigation {
+    background-color: #68C8FF;
+    color: white;
+  }
+  &__month-view {
+    padding-bottom: 10px;
+  }
+  &__month-view__weekdays {
+    margin-bottom: 10px;
+  }
+  &__tile--active {
+    border-radius: 10rem;
+  }
+}
+abbr {
+  text-decoration: none;
+}
+
+/* Iphone */
+@media only screen and (max-width: 46.1875rem) {
+  .card-body {
+    padding: 0;
+  }
+}
+
