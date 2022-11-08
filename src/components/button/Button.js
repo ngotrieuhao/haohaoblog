@@ -47,6 +47,11 @@ const ButtonStyles = styled.button`
         border: 2px solid ${(props) => props.theme.primary};
       }
     `};
+  @media screen and (max-width: 1023.98px) {
+    padding: 10px 20px;
+    font-size: 12px;
+    height: 35px;
+  }
   &:disabled {
     opacity: 0.5;
     pointer-events: none;

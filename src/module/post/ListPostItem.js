@@ -45,9 +45,6 @@ const ListPostItemStyles = styled.div`
       &-image {
         width: 140px;
         height: 130px;
-        img {
-          object-fit: fill;
-        }
       }
       &-title {
         font-size: 16px;

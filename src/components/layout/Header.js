@@ -117,7 +117,7 @@ const Header = () => {
             <Button
               type="button"
               height="56px"
-              className="header-button"
+              className="header-button text-sm md:text-[16px]"
               to="/sign-in"
             >
               Login

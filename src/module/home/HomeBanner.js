@@ -45,7 +45,7 @@ const HomeBanner = () => {
         pagination={{
           dynamicBullets: true,
         }}
-        // autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 3000 }}
         modules={[Pagination, Autoplay, Navigation]}
       >
         {posts.map((post) => (
