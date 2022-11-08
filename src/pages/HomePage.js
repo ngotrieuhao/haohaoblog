@@ -7,8 +7,8 @@ import HomeListFrontend from "module/home/HomeListFrontend";
 import HomeListUiux from "module/home/HomeListUiux";
 import HomeNewest from "module/home/HomeNewest";
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import ScrollToTop from "react-scroll-to-top";
 
 const HomePageStyles = styled.div``;
 
@@ -27,6 +27,7 @@ const HomePage = () => {
           <HomeListBlockchain></HomeListBlockchain>
           <HomeListUiux></HomeListUiux>
         </div>
+        <ScrollToTop smooth className="pl-[6px]" />
       </Layout>
     </HomePageStyles>
   );

@@ -18,6 +18,7 @@ import { v4 } from "uuid";
 import { debounce } from "lodash";
 import ListPostItem from "module/post/ListPostItem";
 import { Button } from "components/button";
+import ScrollToTop from "react-scroll-to-top";
 
 const BLOG_LIST_PAGE = 5;
 
@@ -143,6 +144,7 @@ const ListBlogPage = () => {
           </Button>
         </div>
       )}
+      <ScrollToTop smooth className="pl-[6px]" />
     </Layout>
   );
 };
