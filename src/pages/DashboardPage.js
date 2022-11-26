@@ -5,11 +5,6 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "firebase-app/firebase-config";
-import { Link } from "react-router-dom";
-<script
-  async
-  src="https://api.countapi.xyz/hit/florin-pop.com/visits?callback=websiteVisits"
-></script>;
 
 const DashboardPage = () => {
   const [date, setDate] = useState(new Date());
@@ -33,10 +28,6 @@ const DashboardPage = () => {
     }
     fetchData();
   }, []);
-  function websiteVisits(response) {
-    console.log("websiteVisits ~ response", response);
-    document.getElementById("visits").innerText = response.value;
-  }
   return (
     <div>
       <div className="flex">
@@ -137,25 +128,7 @@ const DashboardPage = () => {
                         />
                       </svg>
                     </h4>
-                    <div className="mb-5 text-lg ">
-                      <Link
-                        to="https://www.hitwebcounter.com"
-                        className="flex flex-col gap-1 md:flex-row"
-                      >
-                        <img
-                          src="https://hitwebcounter.com/counter/counter.php?page=8062862&style=0006&nbdigits=5&type=page&initCount=0"
-                          title="Free Counter"
-                          alt="web counter"
-                          border="0"
-                        />
-                        <span
-                          id="visits"
-                          className="text-sm text-center md:text-2xl"
-                        >
-                          times
-                        </span>
-                      </Link>
-                    </div>
+                    <div className="mb-5 text-lg "></div>
                   </div>
                 </div>
               </div>
