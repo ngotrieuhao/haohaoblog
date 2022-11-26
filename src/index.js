@@ -7,10 +7,10 @@ import { GlobalStyles } from "./styles/GlobalStyles";
 import { theme } from "./utils/constants";
 import { HashRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
-import { ToastContainer } from "react-toastify";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const container = document.getElementById("root");
